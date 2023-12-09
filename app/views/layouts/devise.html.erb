@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br" class="h-full">
 <head>
   <title>RedLibrary</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,21 +11,14 @@
   <%= javascript_importmap_tags %>
 </head>
 
-<body>
-<%= render partial: 'layouts/header' %>
-
-<header class="bg-white shadow">
-  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-bold tracking-tight text-gray-900">Livros</h1>
-  </div>
-</header>
-
-<main>
-  <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+<body class="h-full flex items-center justify-center">
+<main class="w-full">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div class="m-auto max-w-7xl py-6 sm:px-6 lg:px-8">
     <%= yield %>
   </div>
 </main>
 
-<%= javascript_include_tag("main") %>
 </body>
 </html>
